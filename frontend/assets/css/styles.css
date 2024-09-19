@@ -1,3 +1,242 @@
 /**
  * Estilos generales del sitio
  */
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f0f0f0; /* Fondo de la página para mejor contraste */
+}
+
+/* Imagenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenedor principal */
+.login-screen, .register-screen, .home-screen {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Fondo */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* Contenido */
+.content, .register-content, .home-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+/* Pantalla de Inicio de Sesión */
+.login-form {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.sign-in {
+    background-color: #ff6f00; /* Naranja */
+    color: #fff;
+}
+
+.create-account {
+    background-color: #00bf19f6; /* Verde */
+    color: #fff;
+}
+
+.no-account {
+    margin-top: 15px;
+}
+
+/* Pantalla de Registro */
+.register-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+}
+    
+.register-content { 
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #03030381; /* Fondo blanco para el formulario */
+    border-radius: 8px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añadido sombra para mejor visibilidad */
+}
+
+/* Estilos adicionales para asegurar el buen aspecto del texto */
+.register-content h2 {
+    margin-bottom: 20px;
+    color: #ff6f00; /* Naranja */
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#register-submit-btn {
+    background-color: #ff6f00; /* Naranja */
+    color: #fff;
+}
+
+#back-to-login-btn {
+    background-color: #00bf19f6; /* Verde */
+    color: #fff;
+}
+
+
+
+/* Pantalla de Inicio */
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-logo {
+    margin-bottom: 20px;
+}
+
+.home-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff6f00; /* Naranja */
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 400px; /* Ajustar la altura para evitar estiramiento */
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #ff6f00; /* Naranja */
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00bf19f6; /* Verde */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #00bf19f6; /* Verde oscuro */
+}
